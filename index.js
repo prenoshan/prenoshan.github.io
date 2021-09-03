@@ -191,6 +191,12 @@ function checkWinner() {
     //executes only when game is tied
     else if (isDraw == true) {
 
+        //disable all click events
+        disableClickEvents();
+
+        //show winner text
+        resultText.style.display = "flex";
+        
         resultText.innerText = "Game is tied";
 
     }
