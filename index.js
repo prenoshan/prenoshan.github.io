@@ -162,10 +162,11 @@ function checkWinner() {
         isDraw = true;
     }
 
+    //get result div to display results
+    var resultText = document.getElementById("result");
+    
     //if winner found
     if (isWinner == true) {
-
-        var resultText = document.getElementById("result");
 
         //disable all click events
         disableClickEvents();
